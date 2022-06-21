@@ -16,9 +16,15 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="about">O nama</SidebarLink>
-          <SidebarLink to="gallery">Galerija</SidebarLink>
-          <SidebarLink to="contact">Kontakt</SidebarLink>
+          <SidebarLink to="about" onClick={toggle}>
+            O nama
+          </SidebarLink>
+          <SidebarLink to="gallery" onClick={toggle}>
+            Galerija
+          </SidebarLink>
+          <SidebarLink to="contact" onClick={toggle}>
+            Kontakt
+          </SidebarLink>
         </SidebarMenu>
       </SidebarWrapper>
     </SidebarContainer>
