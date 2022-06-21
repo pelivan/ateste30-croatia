@@ -10,13 +10,13 @@ import {
   NavLinks,
 } from "./HeaderElement";
 
-const Header = () => {
+const Header = ({ toggle }) => {
   return (
     <>
       <Nav>
         <HeaderContainer>
           <HeaderLogo to="/">Atest E30 Croatia</HeaderLogo>
-          <MobileIcon>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
