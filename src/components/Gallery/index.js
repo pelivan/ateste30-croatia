@@ -1,12 +1,16 @@
 import React from "react";
-import { GalleryContainer } from "./GalleryElement";
+import {
+  GalleryContainer,
+  GalleryWrapper,
+  GalleryCard,
+} from "./GalleryElement";
 import ImageGallery from "react-image-gallery";
 import "../../../node_modules/react-image-gallery/styles/css/image-gallery.css";
 import "./Gallery.css";
 import "../../images/PrviAuto/E36M50.jpg";
 
 const Gallery = () => {
-  const images = [
+  const veliki = [
     {
       original: require("../../images/TrinaestiAuto/E30.jpg"),
       description:
@@ -32,14 +36,7 @@ const Gallery = () => {
       description:
         "E30 318i-325i Veliki atest (motor, pogon, ovjes, kočnice, felge)",
     },
-    {
-      original: require("../../images/DevetiAuto/E30.jpg"),
-      description: "E30 Touring 324td Mali atest (felge, IS lip, auspuh)",
-    },
-    {
-      original: require("../../images/DesetiAuto/E30.jpg"),
-      description: "E30 320i Mali atest (felge)",
-    },
+
     {
       original: require("../../images/PrviAuto/E36M50.jpg"),
       description:
@@ -78,10 +75,6 @@ const Gallery = () => {
       description:
         "E91 320D Veliki atest (branici, blatobrani, hauba, prednja i zadnja svjetla, auspuh)",
     },
-    {
-      original: require("../../images/TreciAuto/SeatLeon.jpg"),
-      description: "Seat Leon Mali atest (gewinde, optika)",
-    },
 
     {
       original: require("../../images/SestiAuto/E46.jpg"),
@@ -93,6 +86,23 @@ const Gallery = () => {
       description:
         "E46 320d-330d Veliki atest (motor, pogon ovjes, kočnice, felge)",
     },
+
+    {
+      original: require("../../images/OsmiAuto/F30.jpg"),
+      description:
+        "F30 320d Veliki atest (M performance paket, opruge, prednji svjetla)",
+    },
+  ];
+
+  const mali = [
+    {
+      original: require("../../images/DevetiAuto/E30.jpg"),
+      description: "E30 Touring 324td Mali atest (felge, IS lip, auspuh)",
+    },
+    {
+      original: require("../../images/DesetiAuto/E30.jpg"),
+      description: "E30 320i Mali atest (felge)",
+    },
     {
       original: require("../../images/SedmiAuto/F30.jpg"),
       description: "F30 320d Mali atest (M performance paket)",
@@ -102,26 +112,36 @@ const Gallery = () => {
       description: "F30 320d Mali atest (M performance paket)",
     },
     {
-      original: require("../../images/OsmiAuto/F30.jpg"),
-      description:
-        "F30 320d Veliki atest (M performance paket, opruge, prednji svjetla)",
-    },
-
-    {
       original: require("../../images/JedanaestiAuto/E60.jpg"),
       description: "E60 535d Mali atest (felge)",
+    },
+    {
+      original: require("../../images/TreciAuto/SeatLeon.jpg"),
+      description: "Seat Leon Mali atest (gewinde, optika)",
     },
   ];
 
   return (
     <>
       <GalleryContainer>
-        <ImageGallery
-          items={images}
-          showPlayButton={false}
-          showFullscreenButton={false}
-          showThumbnails={false}
-        />
+        <GalleryWrapper>
+          <GalleryCard>
+            <ImageGallery
+              items={veliki}
+              showPlayButton={false}
+              showFullscreenButton={false}
+              showThumbnails={false}
+            />
+          </GalleryCard>
+          <GalleryCard>
+            <ImageGallery
+              items={mali}
+              showPlayButton={false}
+              showFullscreenButton={false}
+              showThumbnails={false}
+            />
+          </GalleryCard>
+        </GalleryWrapper>
       </GalleryContainer>
     </>
   );

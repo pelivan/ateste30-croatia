@@ -5,3 +5,7 @@
 .image-gallery-slide .image-gallery-image {
   object-fit: contain;
 }
+
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+  margin-top: 0;
+}
