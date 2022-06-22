@@ -3,6 +3,9 @@ import {
   GalleryContainer,
   GalleryWrapper,
   GalleryCard,
+  GalleryH1,
+  GalleryH2,
+  GalleryP,
 } from "./GalleryElement";
 import ImageGallery from "react-image-gallery";
 import "../../../node_modules/react-image-gallery/styles/css/image-gallery.css";
@@ -124,8 +127,11 @@ const Gallery = () => {
   return (
     <>
       <GalleryContainer>
+        <GalleryH1>Galerija atestiranih vozila</GalleryH1>
         <GalleryWrapper>
           <GalleryCard>
+            <GalleryH2>Veliki atesti</GalleryH2>
+            <GalleryP>Veliki atesti sastoje se od...</GalleryP>
             <ImageGallery
               items={veliki}
               showPlayButton={false}
@@ -134,6 +140,8 @@ const Gallery = () => {
             />
           </GalleryCard>
           <GalleryCard>
+            <GalleryH2>Mali atesti</GalleryH2>
+            <GalleryP>O njima...</GalleryP>
             <ImageGallery
               items={mali}
               showPlayButton={false}

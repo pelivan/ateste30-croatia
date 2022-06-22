@@ -28,7 +28,6 @@ export const GalleryWrapper = styled.div`
 `;
 
 export const GalleryCard = styled.div`
-  background: #fff;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -41,4 +40,25 @@ export const GalleryCard = styled.div`
     transition: all 0.2s ease-in-out;
     cursor: pointer;
   }
+`;
+
+export const GalleryH1 = styled.h1`
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 64px;
+  @media screen and (max-width: 480px) {
+    font-size: 2rem;
+  }
+`;
+
+export const GalleryH2 = styled.h2`
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 10px;
+`;
+
+export const GalleryP = styled.p`
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
 `;
