@@ -9,13 +9,19 @@ import {
   NavItem,
   NavLinks,
 } from "./HeaderElement";
+import { animateScroll as scroll } from "react-scroll";
 
 const Header = ({ toggle }) => {
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
   return (
     <>
       <Nav>
         <HeaderContainer>
-          <HeaderLogo to="/">Atest E30 Croatia</HeaderLogo>
+          <HeaderLogo to="/" onClick={toggleHome}>
+            Atest E30 Croatia
+          </HeaderLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>

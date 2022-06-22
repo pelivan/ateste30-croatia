@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const GalleryContainer = styled.div`
-  height: 1700px;
+  height: 1750px;
   display: flex;
   flex-direction: column;
   justify-content: center;

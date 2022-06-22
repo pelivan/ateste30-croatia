@@ -9,3 +9,8 @@
 .image-gallery-content .image-gallery-slide .image-gallery-image {
   margin-top: 0;
 }
+
+.image-gallery-left-nav .image-gallery-svg,
+.image-gallery-right-nav .image-gallery-svg {
+  height: 50px;
+}
