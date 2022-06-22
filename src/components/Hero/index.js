@@ -13,7 +13,14 @@ const Hero = () => {
   return (
     <HeroContainer id="home">
       <HeroBackground>
-        <VideoBackground autoPlay loop muted src={Video} type="video/mp4" />
+        <VideoBackground
+          autoPlay
+          playsinline
+          loop
+          muted
+          src={Video}
+          type="video/mp4"
+        />
       </HeroBackground>
       <HeroContent>
         <HeroH1>Atest & E30 Shop</HeroH1>

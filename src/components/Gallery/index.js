@@ -126,7 +126,7 @@ const Gallery = () => {
 
   return (
     <>
-      <GalleryContainer>
+      <GalleryContainer id="gallery">
         <GalleryH1>Galerija atestiranih vozila</GalleryH1>
         <GalleryWrapper>
           <GalleryCard>
