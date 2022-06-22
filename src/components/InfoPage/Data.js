@@ -10,7 +10,7 @@ export const homeObjOne = {
   buttonLabel: "Saznaj više",
   imgStart: false,
   img: require("../../images/car-1.svg").default,
-  alt: "car",
+  alt: "Automobil",
   dark: true,
   primary: true,
   darkText: false,
