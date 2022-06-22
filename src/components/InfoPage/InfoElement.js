@@ -43,6 +43,7 @@ export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
   padding-bottom: 60px;
+  margin-left: 50px;
 `;
 export const TopLine = styled.p`
   color: #fb2d2d;

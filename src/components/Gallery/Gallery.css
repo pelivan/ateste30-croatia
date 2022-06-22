@@ -1,0 +1,7 @@
+.image-gallery-slide .image-gallery-description {
+  bottom: 0px;
+}
+
+.image-gallery-slide .image-gallery-image {
+  object-fit: contain;
+}
