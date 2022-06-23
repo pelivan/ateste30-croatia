@@ -6,6 +6,7 @@ import {
   HeroContent,
   HeroH1,
   HeroP,
+  SpanI,
 } from "./HeroElement";
 import Video from "../../video/video.mp4";
 
@@ -23,8 +24,10 @@ const Hero = () => {
         />
       </HeroBackground>
       <HeroContent>
-        <HeroH1>Atest & E30 Shop</HeroH1>
-        <HeroP>From illegal to legal in no time!</HeroP>
+        <HeroH1>Atest Shop Croatia</HeroH1>
+        <HeroP>
+          From <SpanI>illegal</SpanI> to legal!
+        </HeroP>
       </HeroContent>
     </HeroContainer>
   );

@@ -72,3 +72,8 @@ export const HeroP = styled.p`
     font-size: 18px;
   }
 `;
+
+export const SpanI = styled.span`
+  color: #fb2d2d;
+  font-weight: bold;
+`;

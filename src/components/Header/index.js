@@ -32,7 +32,7 @@ const Header = ({ toggle }) => {
       <Nav scrollHeader={scrollHeader}>
         <HeaderContainer>
           <HeaderLogo to="/" onClick={toggleHome}>
-            Atest E30 Croatia
+            Atest Shop Croatia
           </HeaderLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
