@@ -6,7 +6,7 @@ export const homeObjOne = {
   topLine: "Preradili ste svoje vozilo i više nije legalno?",
   headline: "Prepustite nam svu brigu oko atestiranja vašeg vozila.",
   description:
-    "Našim klijentima nudimo savjetovanje i izradu tehničkog elaborata za nezakonski prerađena vozila na području RH. Pomoću navedenoga naši klijenti imati će zakonski atestirani vozila koja je moguće uredno registrirati.",
+    "Atest Shop Croatia nudi svojim klijentima izradu tehničkog elaborata za sva nezakonski prerađena vozila. Tijekom procesa, klijentima će biti dostupan svaki koristan savjet i/ili informacija u vezi pripreme vozila za atest.",
   buttonLabel: "Saznaj više",
   imgStart: false,
   img: require("../../images/car-1.svg").default,

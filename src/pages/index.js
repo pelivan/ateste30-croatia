@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import InfoPage from "../components/InfoPage";
+import InfoPageTwo from "../components/InfoPageTwo";
 import Sidebar from "../components/Sidebar";
 import { homeObjOne } from "../components/InfoPage/Data";
+import { homeObjTwo } from "../components/InfoPageTwo/Data";
 import Gallery from "../components/Gallery";
 
 const Home = () => {
@@ -19,6 +21,7 @@ const Home = () => {
       <Header toggle={toggleOpen} />
       <Hero />
       <InfoPage {...homeObjOne} />
+      <InfoPageTwo {...homeObjTwo} />
       <Gallery />
     </>
   );

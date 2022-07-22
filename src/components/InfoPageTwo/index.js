@@ -33,17 +33,22 @@ const InfoPage = ({
 }) => {
   return (
     <>
-      <InfoContainer lightBg={lightBg} id={id}>
+      <InfoContainer lightBg={lightBg} id="findmore">
         <InfoWrapper>
           <InfoRow imgStart={imgStart}>
             <Column1>
+              <ImgWrap>
+                <Img src={img} alt={alt} />
+              </ImgWrap>
+            </Column1>
+            <Column2>
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
                   <Button
-                    to="findmore"
+                    to="gallery"
                     smooth={true}
                     duration={500}
                     spy={true}
@@ -57,11 +62,6 @@ const InfoPage = ({
                   </Button>
                 </BtnWrap>
               </TextWrapper>
-            </Column1>
-            <Column2>
-              <ImgWrap>
-                <Img src={img} alt={alt} />
-              </ImgWrap>
             </Column2>
           </InfoRow>
         </InfoWrapper>

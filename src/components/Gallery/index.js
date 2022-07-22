@@ -131,7 +131,7 @@ const Gallery = () => {
         <GalleryWrapper>
           <GalleryCard>
             <GalleryH2>Veliki atesti</GalleryH2>
-            <GalleryP>Veliki atesti sastoje se od...</GalleryP>
+            <GalleryP>Vozila koja imaju više od tri preinake</GalleryP>
             <ImageGallery
               items={veliki}
               showPlayButton={false}
@@ -141,7 +141,7 @@ const Gallery = () => {
           </GalleryCard>
           <GalleryCard>
             <GalleryH2>Mali atesti</GalleryH2>
-            <GalleryP>O njima...</GalleryP>
+            <GalleryP>Vozila koja imaju do tri preinake</GalleryP>
             <ImageGallery
               items={mali}
               showPlayButton={false}
