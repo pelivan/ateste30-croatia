@@ -4,7 +4,7 @@ export const InfoContainer = styled.div`
   color: #fff;
   background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
   @media screen and (max-width: 768px) {
-    padding: 100px 0;
+    padding: 20px 0;
   }
 `;
 export const InfoWrapper = styled.div`
@@ -33,11 +33,17 @@ export const Column1 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col1;
+  @media screen and (max-width: 768px) {
+    grid-area: col2;
+  }
 `;
 export const Column2 = styled.div`
   margin-bottom: 15px;
-  padding: 0 15px;
   grid-area: col2;
+
+  @media screen and (max-width: 768px) {
+    grid-area: col1;
+  }
 `;
 export const TextWrapper = styled.div`
   max-width: 540px;
