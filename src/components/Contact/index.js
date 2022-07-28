@@ -9,11 +9,13 @@ import {
   Column2,
   ItemStyles,
   PStyle,
+  BtnWrap,
 } from "./ContactElement";
 import { useState } from "react";
 import { Home, Mail, PhoneCall } from "tabler-icons-react";
+import { Button } from "../ButtonElements";
 
-const Contact = () => {
+const Contact = ({ primary, dark, dark2 }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -87,7 +89,21 @@ const Contact = () => {
                     />
                   </label>
                 </div>
-                <button type="submit">Pošalji</button>
+                <BtnWrap>
+                  <Button
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact="true"
+                    offset={-80}
+                    primary={"#f74040d5"}
+                    dark={dark ? 1 : 0}
+                    dark2={dark2 ? 1 : 0}
+                    type="submit"
+                  >
+                    Pošalji
+                  </Button>
+                </BtnWrap>
               </FormStyle>
             </Column2>
           </ContactRow>

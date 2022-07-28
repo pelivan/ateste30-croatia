@@ -52,6 +52,11 @@ export const Column2 = styled.div`
   grid-area: col2;
 `;
 
+export const BtnWrap = styled.div`
+  display: flex;
+  justify-content: flex-start;
+`;
+
 export const ItemStyles = styled.div`
   padding: 1rem;
   margin-right: 30px;
@@ -112,7 +117,7 @@ export const FormStyle = styled.form`
   }
   button[type="submit"] {
     background-color: var(--gray-1);
-    color: var(--black);
+    color: #000;
     font-size: 2rem;
     display: inline-block;
     outline: none;
