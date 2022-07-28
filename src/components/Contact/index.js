@@ -13,15 +13,14 @@ import {
 } from "./ContactElement";
 import { useState } from "react";
 import { Home, Mail, PhoneCall } from "tabler-icons-react";
-import { Button } from "../ButtonElements";
 
-const Contact = ({ primary, dark, dark2 }) => {
+const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   return (
     <>
-      <ContactContainer>
+      <ContactContainer id="contact">
         <ContactWrapper>
           <ContactH1>Slobodno nas kontaktirajte</ContactH1>
           <ContactRow>
@@ -90,19 +89,7 @@ const Contact = ({ primary, dark, dark2 }) => {
                   </label>
                 </div>
                 <BtnWrap>
-                  <Button
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact="true"
-                    offset={-80}
-                    primary={"#f74040d5"}
-                    dark={dark ? 1 : 0}
-                    dark2={dark2 ? 1 : 0}
-                    type="submit"
-                  >
-                    Pošalji
-                  </Button>
+                  <button type="submit">Pošalji</button>
                 </BtnWrap>
               </FormStyle>
             </Column2>

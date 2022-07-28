@@ -122,15 +122,20 @@ export const FormStyle = styled.form`
     resize: vertical;
   }
   button[type="submit"] {
-    background-color: var(--gray-1);
-    color: #000;
-    font-size: 2rem;
+    background-color: #f74040d5;
+    color: #fff;
+    font-size: 1rem;
     display: inline-block;
     outline: none;
     border: none;
     padding: 1rem 4rem;
-    border-radius: 8px;
+    border-radius: 50px;
     cursor: pointer;
+    &:hover {
+      transition: all 0.2s ease-in-out;
+      background: "#fff";
+      color: "#000";
+    }
   }
 `;
 
