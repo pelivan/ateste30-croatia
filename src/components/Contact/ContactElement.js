@@ -85,7 +85,7 @@ export const PStyle = styled.div`
   font-size: 1.5rem;
   line-height: 1.3em;
   @media only screen and (max-width: 768px) {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
 `;
 
@@ -100,6 +100,9 @@ export const FormStyle = styled.form`
   label {
     font-size: 1.8rem;
     color: #fff;
+    @media only screen and (max-width: 768px) {
+      font-size: 1.2rem;
+    }
   }
   input,
   textarea {
@@ -110,6 +113,9 @@ export const FormStyle = styled.form`
     border: none;
     border-radius: 8px;
     margin-top: 1rem;
+    @media only screen and (max-width: 768px) {
+      font-size: 1.2rem;
+    }
   }
   textarea {
     min-height: 250px;
