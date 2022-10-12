@@ -38,7 +38,11 @@ const Contact = () => {
                   <Mail size={48} strokeWidth={1.5} color={"#808080"} />
                 </div>
                 <div className="info">
-                  <PStyle>atest.e30shop@gmail.com</PStyle>
+                  <PStyle>
+                    <a href="mailto:atestshopcroatia@gmail.com">
+                      atestshopcroatia@gmail.com
+                    </a>
+                  </PStyle>
                 </div>
               </ItemStyles>
               <ItemStyles>
@@ -46,7 +50,9 @@ const Contact = () => {
                   <PhoneCall size={48} strokeWidth={1.5} color={"#808080"} />
                 </div>
                 <div className="info">
-                  <PStyle>+385 xx xxx xxx</PStyle>
+                  <PStyle>
+                    <a href="tel:+385 97 676 2048">+385 97 676 2048</a>
+                  </PStyle>
                 </div>
               </ItemStyles>
             </Column1>
