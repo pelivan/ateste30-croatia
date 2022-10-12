@@ -39,13 +39,19 @@ const Header = ({ toggle }) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="about">O nama</NavLinks>
+              <NavLinks to="about" smooth="true" duration="600">
+                O nama
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="gallery">Galerija</NavLinks>
+              <NavLinks to="gallery" smooth="true" duration="600">
+                Galerija
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="contact">Kontakt</NavLinks>
+              <NavLinks to="contact" smooth="true" duration="600">
+                Kontakt
+              </NavLinks>
             </NavItem>
           </NavMenu>
         </HeaderContainer>
