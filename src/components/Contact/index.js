@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import {
   ContactContainer,
   ContactWrapper,
@@ -11,13 +11,32 @@ import {
   PStyle,
   BtnWrap,
 } from "./ContactElement";
-import { useState } from "react";
 import { Home, Mail, PhoneCall } from "tabler-icons-react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_qi3yqu9",
+        "template_ryubrlr",
+        form.current,
+        "vZV6mts00ch6WHt_C"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <>
       <ContactContainer id="contact">
@@ -58,45 +77,38 @@ const Contact = () => {
             </Column1>
             <Column2>
               <FormStyle>
-                <div className="form-group">
-                  <label htmlFor="name">
-                    Vaše ime
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      value={name}
-                      onChange={(e) => setName(e.target.value)}
-                    />
-                  </label>
-                </div>
-                <div className="form-group">
-                  <label htmlFor="email">
-                    E-mail
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                    />
-                  </label>
-                </div>
-                <div className="form-group">
-                  <label htmlFor="message">
-                    Poruka
-                    <textarea
-                      type="text"
-                      id="message"
-                      name="message"
-                      value={message}
-                      onChange={(e) => setMessage(e.target.value)}
-                    />
-                  </label>
-                </div>
-                <BtnWrap>
-                  <button type="submit">Pošalji</button>
-                </BtnWrap>
+                {/* <form ref={form} onSubmit={sendEmail}>
+                  <div className="form-group">
+                    <label htmlFor="name">
+                      Vaše ime
+                      <input type="text" id="name" name="name" />
+                    </label>
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="email">
+                      E-mail
+                      <input type="email" id="email" name="email" />
+                    </label>
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="message">
+                      Poruka
+                      <textarea type="text" id="message" name="message" />
+                    </label>
+                  </div>
+                  <BtnWrap>
+                    <button type="submit">Pošalji</button>
+                  </BtnWrap>
+                </form> */}
+                <form ref={form} onSubmit={sendEmail}>
+                  <label>Name</label>
+                  <input type="text" name="user_name" />
+                  <label>Email</label>
+                  <input type="email" name="user_email" />
+                  <label>Message</label>
+                  <textarea name="message" />
+                  <input type="submit" value="Send" />
+                </form>
               </FormStyle>
             </Column2>
           </ContactRow>
