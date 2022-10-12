@@ -9,7 +9,6 @@ import {
   Column2,
   ItemStyles,
   PStyle,
-  BtnWrap,
 } from "./ContactElement";
 import { Home, Mail, PhoneCall } from "tabler-icons-react";
 import emailjs from "@emailjs/browser";
