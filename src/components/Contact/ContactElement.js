@@ -89,56 +89,6 @@ export const PStyle = styled.div`
   }
 `;
 
-export const FormStyle = styled.form`
-  color: #fff;
-  width: 100%;
-  .form-group {
-    width: 100%;
-    margin-bottom: 2rem;
-    color: #fff;
-  }
-  label {
-    font-size: 1.8rem;
-    color: #fff;
-    @media only screen and (max-width: 768px) {
-      font-size: 1.2rem;
-    }
-  }
-  input,
-  textarea {
-    width: 100%;
-    font-size: 2rem;
-    padding: 1.2rem;
-    outline: none;
-    border: none;
-    border-radius: 8px;
-    margin-top: 1rem;
-    @media only screen and (max-width: 768px) {
-      font-size: 1.2rem;
-    }
-  }
-  textarea {
-    min-height: 250px;
-    resize: vertical;
-  }
-  button[type="submit"] {
-    background-color: #f74040d5;
-    color: #fff;
-    font-size: 1rem;
-    display: inline-block;
-    outline: none;
-    border: none;
-    padding: 1rem 4rem;
-    border-radius: 50px;
-    cursor: pointer;
-    &:hover {
-      transition: all 0.2s ease-in-out;
-      background: "#fff";
-      color: "#000";
-    }
-  }
-`;
-
 export const ContactSectionStyle = styled.div`
   padding: 10rem 0;
   .contactSection__wrapper {
@@ -181,6 +131,56 @@ export const ContactSectionStyle = styled.div`
     }
     .right {
       padding: 4rem 2rem 2rem 2rem;
+    }
+  }
+`;
+
+export const StyledContactForm = styled.div`
+  color: #fff;
+  width: 100%;
+  .form-group {
+    width: 100%;
+    margin-bottom: 2rem;
+    color: #fff;
+  }
+  label {
+    font-size: 1.8rem;
+    color: #fff;
+    @media only screen and (max-width: 768px) {
+      font-size: 1.2rem;
+    }
+  }
+  input,
+  textarea {
+    width: 100%;
+    font-size: 2rem;
+    padding: 1.7rem;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    margin-top: 1rem;
+    @media only screen and (max-width: 768px) {
+      font-size: 1.2rem;
+    }
+  }
+  textarea {
+    min-height: 250px;
+    resize: vertical;
+  }
+  button[type="submit"] {
+    background-color: #f74040d5;
+    color: #fff;
+    font-size: 1rem;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 1rem 4rem;
+    border-radius: 50px;
+    cursor: pointer;
+    &:hover {
+      transition: all 0.2s ease-in-out;
+      background: "#fff";
+      color: "#000";
     }
   }
 `;

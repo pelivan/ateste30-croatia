@@ -4,7 +4,7 @@ import {
   ContactWrapper,
   ContactRow,
   ContactH1,
-  FormStyle,
+  StyledContactForm,
   Column1,
   Column2,
   ItemStyles,
@@ -17,9 +17,7 @@ import emailjs from "@emailjs/browser";
 const Contact = () => {
   const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-
+  const sendEmail = () => {
     emailjs
       .sendForm(
         "service_qi3yqu9",
@@ -30,6 +28,7 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          console.log("sent");
         },
         (error) => {
           console.log(error.text);
@@ -76,40 +75,17 @@ const Contact = () => {
               </ItemStyles>
             </Column1>
             <Column2>
-              <FormStyle>
-                {/* <form ref={form} onSubmit={sendEmail}>
-                  <div className="form-group">
-                    <label htmlFor="name">
-                      Vaše ime
-                      <input type="text" id="name" name="name" />
-                    </label>
-                  </div>
-                  <div className="form-group">
-                    <label htmlFor="email">
-                      E-mail
-                      <input type="email" id="email" name="email" />
-                    </label>
-                  </div>
-                  <div className="form-group">
-                    <label htmlFor="message">
-                      Poruka
-                      <textarea type="text" id="message" name="message" />
-                    </label>
-                  </div>
-                  <BtnWrap>
-                    <button type="submit">Pošalji</button>
-                  </BtnWrap>
-                </form> */}
+              <StyledContactForm>
                 <form ref={form} onSubmit={sendEmail}>
-                  <label>Name</label>
+                  <label>Vaše ime</label>
                   <input type="text" name="user_name" />
                   <label>Email</label>
                   <input type="email" name="user_email" />
-                  <label>Message</label>
+                  <label>Poruka</label>
                   <textarea name="message" />
-                  <input type="submit" value="Send" />
+                  <input type="submit" value="Pošalji" />
                 </form>
-              </FormStyle>
+              </StyledContactForm>
             </Column2>
           </ContactRow>
         </ContactWrapper>
