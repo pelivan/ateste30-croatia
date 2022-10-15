@@ -10,7 +10,7 @@ import {
   ItemStyles,
   PStyle,
 } from "./ContactElement";
-import { Home, Mail, PhoneCall } from "tabler-icons-react";
+import { Home, Mail, PhoneCall, Clock } from "tabler-icons-react";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
@@ -69,6 +69,18 @@ const Contact = () => {
                 <div className="info">
                   <PStyle>
                     <a href="tel:+385 97 676 2048">+385 97 676 2048</a>
+                  </PStyle>
+                </div>
+              </ItemStyles>
+              <ItemStyles>
+                <div className="icon">
+                  <Clock size={48} strokeWidth={1.5} color={"#808080"} />
+                </div>
+                <div className="info">
+                  <PStyle>
+                    <PStyle>
+                      Radno vrijeme: Pon - Pet: 09-15 Vikendom ne radimo
+                    </PStyle>
                   </PStyle>
                 </div>
               </ItemStyles>
