@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import {
   ContactContainer,
   ContactWrapper,
@@ -9,6 +9,7 @@ import {
   Column2,
   ItemStyles,
   PStyle,
+  ContactH2,
 } from "./ContactElement";
 import { Home, Mail, PhoneCall, Clock } from "tabler-icons-react";
 import emailjs from "@emailjs/browser";
@@ -42,6 +43,10 @@ const Contact = () => {
           <ContactH1>Slobodno nas kontaktirajte</ContactH1>
           <ContactRow>
             <Column1>
+              <ContactH2>
+                ATEST SHOP
+                <br /> Obrt za tehničko savjetovanje <br /> Vl. Saša Pokos
+              </ContactH2>
               <ItemStyles>
                 <div className="icon">
                   <Home size={48} strokeWidth={1.5} color={"#808080"} />
@@ -79,8 +84,8 @@ const Contact = () => {
                 <div className="info">
                   <PStyle>
                     <PStyle>
-                      Radno vrijeme: Pon - Pet: 09-15 Vikendom i praznicima ne
-                      radimo
+                      Radno vrijeme: <br /> Pon - Pet: 08-16 <br /> Rad sa
+                      strankama : 09-15
                     </PStyle>
                   </PStyle>
                 </div>
@@ -95,7 +100,7 @@ const Contact = () => {
                   <input type="email" name="user_email" />
                   <label>Poruka</label>
                   <textarea name="message" />
-                  <input type="submit" value="Pošalji" />
+                  <button type="submit">Pošalji</button>
                 </form>
               </StyledContactForm>
             </Column2>
