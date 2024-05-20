@@ -166,7 +166,7 @@ export const StyledContactForm = styled.div`
   textarea {
     width: 100%;
     font-size: 1rem;
-    padding: 1.7rem;
+    padding: 1rem;
     outline: none;
     border: none;
     border-radius: 8px;
@@ -176,7 +176,7 @@ export const StyledContactForm = styled.div`
     margin: 0.5rem 0;
   }
   textarea {
-    min-height: 250px;
+    min-height: 180px;
     resize: vertical;
   }
   button[type="submit"] {
