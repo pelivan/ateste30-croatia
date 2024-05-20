@@ -33,12 +33,24 @@ export const ContactRow = styled.div`
 
 export const ContactH1 = styled.h1`
   margin-top: 50px;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #fff;
   margin-bottom: 64px;
   @media screen and (max-width: 480px) {
     font-size: 2rem;
     margin-top: 0px;
+  }
+`;
+
+export const ContactH2 = styled.h2`
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #fff;
+  margin-bottom: 18px;
+  @media screen and (max-width: 480px) {
+    font-size: 1.5rem;
+    margin-top: 10px;
   }
 `;
 
@@ -140,11 +152,10 @@ export const StyledContactForm = styled.div`
   width: 100%;
   .form-group {
     width: 100%;
-    margin-bottom: 2rem;
     color: #fff;
   }
   label {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     color: #fff;
     @media only screen and (max-width: 768px) {
       font-size: 1.2rem;
@@ -153,34 +164,36 @@ export const StyledContactForm = styled.div`
   input,
   textarea {
     width: 100%;
-    font-size: 2rem;
+    font-size: 1rem;
     padding: 1.7rem;
     outline: none;
     border: none;
     border-radius: 8px;
-    margin-top: 1rem;
     @media only screen and (max-width: 768px) {
       font-size: 1.2rem;
     }
+    margin: 0.5rem 0;
   }
   textarea {
     min-height: 250px;
     resize: vertical;
   }
   button[type="submit"] {
-    background-color: #f74040d5;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     font-size: 1rem;
     display: inline-block;
     outline: none;
     border: none;
     padding: 1rem 4rem;
-    border-radius: 50px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 8px;
     cursor: pointer;
     &:hover {
       transition: all 0.2s ease-in-out;
-      background: "#fff";
-      color: "#000";
+      background: #f74040d5;
+      color: #fff;
     }
   }
 `;
