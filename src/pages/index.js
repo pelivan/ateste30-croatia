@@ -8,6 +8,7 @@ import { homeObjOne } from "../components/InfoPage/Data";
 import { homeObjTwo } from "../components/InfoPageTwo/Data";
 import Gallery from "../components/Gallery";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,6 +26,7 @@ const Home = () => {
       <InfoPageTwo {...homeObjTwo} />
       <Gallery />
       <Contact />
+      <Footer />
     </>
   );
 };
