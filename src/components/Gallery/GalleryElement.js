@@ -47,18 +47,26 @@ export const GalleryH1 = styled.h1`
   color: #fff;
   margin-bottom: 64px;
   @media screen and (max-width: 480px) {
-    font-size: 2rem;
+    text-align: center;
+    font-size: 1.8rem;
   }
 `;
 
 export const GalleryH2 = styled.h2`
   color: #fff;
   font-size: 2rem;
-  margin-bottom: 10px;
+  margin: 10px 0;
+  @media screen and (max-width: 480px) {
+    font-size: 1.6rem;
+  }
 `;
 
 export const GalleryP = styled.p`
   color: #fff;
   font-size: 1.5rem;
   text-align: center;
+  margin-bottom: 10px;
+  @media screen and (max-width: 480px) {
+    font-size: 1rem;
+  }
 `;

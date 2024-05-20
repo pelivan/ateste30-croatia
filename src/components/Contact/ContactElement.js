@@ -37,7 +37,8 @@ export const ContactH1 = styled.h1`
   color: #fff;
   margin-bottom: 64px;
   @media screen and (max-width: 480px) {
-    font-size: 2rem;
+    text-align: center;
+    font-size: 1.8rem;
     margin-top: 0px;
   }
 `;
@@ -49,7 +50,7 @@ export const ContactH2 = styled.h2`
   color: #fff;
   margin-bottom: 18px;
   @media screen and (max-width: 480px) {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-top: 10px;
   }
 `;
