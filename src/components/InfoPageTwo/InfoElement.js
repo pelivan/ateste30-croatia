@@ -50,6 +50,9 @@ export const TextWrapper = styled.div`
   padding-top: 0;
   padding-bottom: 60px;
   margin-left: 50px;
+  @media screen and (max-width: 480px) {
+    margin-left: 0;
+  }
 `;
 export const TopLine = styled.p`
   color: #fb2d2d;

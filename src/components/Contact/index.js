@@ -85,7 +85,7 @@ const Contact = () => {
                   <PStyle>
                     <PStyle>
                       Radno vrijeme: <br /> Pon - Pet: 08-16 <br /> Rad sa
-                      strankama : 09-15
+                      strankama: 09-15
                     </PStyle>
                   </PStyle>
                 </div>
