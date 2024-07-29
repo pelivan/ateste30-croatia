@@ -24,7 +24,9 @@ const Hero = () => {
         />
       </HeroBackground>
       <HeroContent>
-        <HeroH1>Atest Shop Croatia</HeroH1>
+        <HeroH1 style={{ textTransform: "uppercase" }}>
+          Atest Shop Croatia
+        </HeroH1>
         <HeroP>
           From <SpanI>illegal</SpanI> to legal!
         </HeroP>
