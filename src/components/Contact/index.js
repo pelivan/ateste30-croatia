@@ -44,7 +44,7 @@ const Contact = () => {
           <ContactRow>
             <Column1>
               <ContactH2>
-                ATEST SHOP
+                ATEST SHOP CROATIA
                 <br /> Obrt za tehničko savjetovanje <br /> Vl. Saša Pokos
               </ContactH2>
               <ItemStyles>
