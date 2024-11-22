@@ -5,7 +5,6 @@ import {
   GalleryCard,
   GalleryH1,
   GalleryH2,
-  GalleryP,
 } from "./GalleryElement";
 import ImageGallery from "react-image-gallery";
 import "../../../node_modules/react-image-gallery/styles/css/image-gallery.css";
@@ -131,7 +130,6 @@ const Gallery = () => {
         <GalleryWrapper>
           <GalleryCard>
             <GalleryH2>Veliki atesti</GalleryH2>
-            <GalleryP>Vozila koja imaju više od tri preinake</GalleryP>
             <ImageGallery
               items={veliki}
               showPlayButton={false}
@@ -141,7 +139,6 @@ const Gallery = () => {
           </GalleryCard>
           <GalleryCard>
             <GalleryH2>Mali atesti</GalleryH2>
-            <GalleryP>Vozila koja imaju do tri preinake</GalleryP>
             <ImageGallery
               items={mali}
               showPlayButton={false}
