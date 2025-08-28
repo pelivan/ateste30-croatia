@@ -13,7 +13,7 @@ const Footer = () => {
           <FaInstagram size={25} />
         </a>
       </FooterRow>
-      <span>© &nbsp;2024 &nbsp;Atest Shop Croatia</span>
+      <span>© &nbsp;2025 &nbsp;Atest Shop Croatia</span>
     </FooterContainer>
   );
 };
