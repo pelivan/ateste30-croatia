@@ -12,7 +12,6 @@ import Footer from "../components/Footer";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
-  console.log(isOpen);
   const toggleOpen = () => {
     setIsOpen(!isOpen);
   };
